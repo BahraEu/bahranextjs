@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "esnext",
+        "module": "esnext",
+        "jsx": "preserve",
+        "lib": ["dom", "es2017"],
+        "moduleResolution": "node",
+        "allowJs": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "isolatedModules": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "noFallthroughCasesInSwitch": true,
+        "paths": {
+            "@*": ["src/*"],
+            "@assets/*": ["src/public/assets/*"],
+            "@components/*": ["./src/components/*"],
+            "@bahra/*": ["./src/components/bahra*"],
+            "@styles/*": ["src/styles/*"],
+            "@store/*": ["src/store/*"],
+            "@services/*": ["./src/services/*"],
+            "@garaphql/*": ["./src/garaphql/*"],
+            "@types/*": ["src/types/*"],
+            "@utilty/*": ["src/utilty/*"]
+        },
+        "strict": false
+    },
+    "exclude": ["dist", ".next", "out", "next.config.js"],
+    "include": [
+        "next-env.d.ts",
+        "generated/**/*.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.json",
+        "config/config.tsx",
+        "src/services/i18n/utils.js",
+        "src/services/stores/ViewStore.js",
+        "src/services/stores/cartStore.js"
+    ]
+}
